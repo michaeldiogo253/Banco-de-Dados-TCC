@@ -1,7 +1,7 @@
 CREATE database SGC;
 use SGC;
 
-CREATE USER 'michael'@'%' IDENTIFIED BY 'kelly253';
+CREATE USER 'michael'@'%' IDENTIFIED BY '123456';
 GRANT ALL ON *.* TO 'michael'@'%' WITH GRANT OPTION;
 
 drop DATABASE SGC;
@@ -63,10 +63,10 @@ CREATE TABLE tb_itensvendas (
 );
 
 insert into tb_usuario (nome, tipo_conta , rg, cpf ,email , cargo, celular, usuario_login, senha_login)
-values('Michael Diogo Fagundes','admin','MG20129975','11948106671','michaeldiogo17@outlook.com','Engenheiro de software','999782517','michael253','kelly253');
+values('Michael Fagundes','admin','MG12139090','1123426671','michaeldiogo17@outlook.com','Engenheiro de software','999782102','michael253','123456');
 
 insert into tb_usuario (nome, tipo_conta , rg, cpf ,email , cargo, celular, usuario_login, senha_login)
-values('Kelly Crystine','funcionario','MG123456','12312312345','kellyAssis@outlook.com','Caixa','998263371','kelly253','michael253');
+values('Kelly Crystine','funcionario','MG123456','12312312345','kellyAssis@outlook.com','Caixa','998903378','kelly253','123456');
 
 SELECT * FROM SGC.tb_usuario;
 select * from tb_produtos;
